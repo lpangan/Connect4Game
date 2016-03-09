@@ -1,6 +1,7 @@
 var matrix = [];
 var MAX_ROW = 6;
 var MAX_COL = 7;
+/* NUMBER OF CHIPS TO CONNECT */
 var MAX_CON = 4;
 
 var colMultiplier;
@@ -83,6 +84,12 @@ function displayWinner( result ) {
 		}
 		
 		document.getElementById("console").innerHTML = "";
+		
+		var con = confirm("Play again?");
+		
+		if ( con ) {
+			location.reload();
+		}
    	}
 }
 
